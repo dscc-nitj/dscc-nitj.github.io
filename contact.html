@@ -11,12 +11,20 @@
     <link rel="stylesheet" href="css/styles-merged.css" />
     <link rel="stylesheet" href="css/style.min.css" />
     <link rel="stylesheet" href="css/custom.css" />
+
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.min.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
   </head>
   <body>
     <div class="">
       <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
           <div class="navbar-header">
+            <!-- <div class="btn-more js-btn-more visible-xs">
+            <a href="#"><i class="icon-dots-three-vertical"></i></a>
+          </div> -->
             <button
               type="button"
               class="navbar-toggle collapsed"
@@ -31,6 +39,9 @@
               <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="index.html" title="NITJ">NITJ</a>
+
+            <!-- <a><img src="img/logo.png" / class="navnitj"></a> -->
+            <!-- <a class="nitj-head">NITJ</a> -->
           </div>
 
           <div id="navbar-collapse" class="navbar-collapse collapse">
@@ -39,6 +50,29 @@
               <li><a href="courses.html">Courses</a></li>
               <li><a href="teachers.html">Our Team </a></li>
               <li><a href="events.html">Imp! Dates</a></li>
+              <!-- <li class="dropdown">
+              <a href="#" data-toggle="dropdown" class="dropdown-toggle"
+                >Pages</a
+              >
+              <ul class="dropdown-menu">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="course-single.html">Course Single</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li class="dropdown-submenu dropdown">
+                  <a href="#" data-toggle="dropdown" class="dropdown-toggle"
+                    ><span>Sub Menu</span></a
+                  >
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Second Level Menu</a></li>
+                    <li><a href="#">Second Level Menu</a></li>
+                    <li><a href="#">Second Level Menu</a></li>
+                    <li><a href="#">Second Level Menu</a></li>
+                  </ul>
+                </li>
+                <li><a href="news.html">News</a></li>
+              </ul>
+            </li> -->
               <li class="active"><a href="contact.html">Contact</a></li>
               <li><a href="faq.html">FAQs</a></li>
             </ul>
@@ -74,7 +108,7 @@
                       <li><a href="teachers.html">Our Team</a></li>
                       <li><a href="events.html">Imp! Dates</a></li>
                       <li class="active"><a>Contact Us</a></li>
-                      <li><a href="faq.html">FAQ</a></li>
+                      <li><a href="about.html">FAQ</a></li>
                     </ul>
                   </div>
                 </div>
@@ -84,11 +118,7 @@
                 >
                   <h2>Get In Touch</h2>
                   <p>Contact us using the form below.</p>
-                  <form
-                    method="post"
-                    class="probootstrap-form"
-                    id="contact-form-dscc"
-                  >
+                  <form action="#" method="post" class="probootstrap-form">
                     <div class="form-group">
                       <label for="name">Full Name</label>
                       <input
@@ -96,7 +126,6 @@
                         class="form-control"
                         id="name"
                         name="name"
-                        required
                       />
                     </div>
                     <div class="form-group">
@@ -106,7 +135,6 @@
                         class="form-control"
                         id="email"
                         name="email"
-                        required
                       />
                     </div>
                     <div class="form-group">
@@ -116,7 +144,6 @@
                         class="form-control"
                         id="subject"
                         name="subject"
-                        required
                       />
                     </div>
                     <div class="form-group">
@@ -127,7 +154,6 @@
                         class="form-control"
                         id="message"
                         name="message"
-                        required
                       ></textarea>
                     </div>
                     <div class="form-group">
@@ -156,10 +182,8 @@
                 data-animate-effect="fadeInRight"
               >
                 Get registered now!<br />
-                Only <s>₹2000</s>&nbsp&nbsp₹1000
+                Only for ₹1000
               </h2>
-              <br />
-
               <a
                 href="#"
                 role="button"
@@ -215,22 +239,12 @@
               <div class="probootstrap-footer-widget">
                 <h3>Links</h3>
                 <ul>
-                  <li class="col-md-12 col-sm-2">
-                    <a href="index.html">Home</a>
-                  </li>
-                  <li class="col-md-12 col-sm-2">
-                    <a href="courses.html">Courses</a>
-                  </li>
-                  <li class="col-md-12 col-sm-2">
-                    <a href="teachers.html">Our Team</a>
-                  </li>
-                  <li class="col-md-12 col-sm-2">
-                    <a href="events.html">Imp! Dates</a>
-                  </li>
+                  <li class="col-md-12 col-sm-2"><a href="#">Home</a></li>
+                  <li class="col-md-12 col-sm-2"><a href="#">Courses</a></li>
+                  <li class="col-md-12 col-sm-2"><a href="#">Our Team</a></li>
+                  <li class="col-md-12 col-sm-2"><a href="#">Imp! Dates</a></li>
                   <li class="col-md-12 col-sm-2"><a href="#">Contact</a></li>
-                  <li class="col-md-12 col-sm-2">
-                    <a href="faq.html">FAQs</a>
-                  </li>
+                  <li class="col-md-12 col-sm-2"><a href="#">FAQs</a></li>
                 </ul>
               </div>
             </div>
@@ -246,20 +260,16 @@
                       India</span
                     >
                   </li>
-                  <li>
-                    <i class="icon-mail"></i
-                    ><a href="mailto:dscc@nitj.ac.in"
-                      ><span>dscc@nitj.ac.in</span></a
-                    >
-                  </li>
+                  <li><i class="icon-mail"></i><span>dscc@nitj.ac.in</span></li>
                   <li>
                     <i class="icon-phone2"></i
-                    ><span>+91 88473-90036, +91 83519-76199</span>
+                    ><span>+91 83519-76199, +91 88473-90036</span>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
+          <!-- END row -->
         </div>
 
         <div class="probootstrap-copyright">
@@ -285,10 +295,10 @@
         </div>
       </footer>
     </div>
+    <!-- END wrapper -->
 
     <script src="js/scripts.min.js"></script>
     <script src="js/main.min.js"></script>
     <script src="js/custom.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
   </body>
 </html>
