@@ -68,7 +68,7 @@ a {
 a:active,
 a:focus,
 a:hover {
-  color: #582aeb;
+  /* color: #582aeb; */
   text-decoration: none;
 }
 .flexslider .probootstrap-heading,

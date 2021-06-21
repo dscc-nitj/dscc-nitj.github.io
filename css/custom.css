@@ -1,1 +1,22 @@
 /* Your custom css code goes here */
+.mainhd {
+  text-align: center;
+}
+.msgdh {
+  font-size: large;
+}
+
+.msgdh:hover {
+  background-image: linear-gradient(
+    to left,
+    violet,
+    indigo,
+    blue,
+    green,
+    yellow,
+    orange,
+    red
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}

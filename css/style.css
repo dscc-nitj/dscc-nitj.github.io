@@ -71,8 +71,18 @@ a {
 a:hover,
 a:focus,
 a:active {
-  color: #582aeb;
-  text-decoration: none;
+  background-image: linear-gradient(
+    to left,
+    violet,
+    indigo,
+    blue,
+    green,
+    yellow,
+    orange,
+    red
+  );
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .hero-text-heading,

@@ -31,15 +31,19 @@ jQuery(document).ready(function() {
 			type:'post',
 			data:$("#contact-form-dscc").serializeArray(),
 			success: function(){
-			alert("Form Submitted Successfully!")
+				alert("Form Submitted Successfully!")
 			},
 			error: function(){
-				window.reload();
+				// window.reload();
 				alert("Error: Form Not Submitted")
 			}
 		});
 
 	});
+
+	$('.enrollnow').click(function(e){
+		
+	})
 
 
 
