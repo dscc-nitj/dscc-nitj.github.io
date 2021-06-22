@@ -20,3 +20,15 @@
   -webkit-background-clip: text;
   color: transparent;
 }
+
+.invbtn {
+  display: none;
+}
+
+.flierimg {
+  width: 100%;
+}
+
+.flierbdy {
+  padding: 0%;
+}

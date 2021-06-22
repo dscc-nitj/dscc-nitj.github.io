@@ -41,9 +41,7 @@ jQuery(document).ready(function() {
 
 	});
 
-	$('.enrollnow').click(function(e){
-		
-	})
+	$('.invbtn').click();
 
 
 
